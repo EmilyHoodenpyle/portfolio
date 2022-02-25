@@ -1,3 +1,103 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+body {
+    background-color: rgb(199, 144, 162);
+}
+
+header {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(73, 88, 73);
+    color: rgb(165, 85, 112);
+}
+
+header h1 {
+    display: inline;
+    font-size: 20px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+a {
+    color:palevioletred;
+    text-decoration: dotted;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(75, 37, 50);
+}
+
+section {
+    width: 400px;
+    margin: 50px auto;
+    margin-bottom: 200px;
+}
+
+section img {
+    width: 300px;
+    height: auto;
+
+}
+
+#Cranach {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+#Caravaggio {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+}
+
+#Gentileschi {
+    position: fixed;
+    top: 150px;
+    right: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    width: 1200px;
+    border: 10px solid rgb(73, 88, 73);
+    background-color: rgb(73, 88, 73);
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    font-size: 16px;
+}
+
+footer h2 {
+    color: rgb(165, 85, 112);
 }
