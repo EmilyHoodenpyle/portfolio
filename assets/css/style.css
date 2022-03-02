@@ -1,9 +1,9 @@
     /* color scheme sourced from http://khroma.co/generator/ */
 :root {
-    --light: #DDC7E6;
-    --dark: #1E1354;
-    --midlight: #DC5579;
-     --middark: #B60D37;
+    --light: #E5F4B5 ;
+    --dark: #052166;
+    --midlight: #D22E01;
+     --middark: #396971;
 }
     
     /* set content highlight color and background */
@@ -85,6 +85,21 @@ a {
     color:var(--dark);
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    background-color: var(--dark);
+    border: 5px;
+    border-radius: 30%;
+    padding: 16px;
+    color: var(--light);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100px;
+  }
+
 p {
     font-size: 16px;
     color: var(--dark);
@@ -140,22 +155,6 @@ section #my-work {
     font-size: 24px;
   }
 
-  .button {
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    align-items: center;
-    align-content: space-between;
-    background-color: var(--dark);
-    border: 5px;
-    border-radius: 30%;
-    padding: 16px;
-    color: var(--light);
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
 footer {
 
     display: flex;
@@ -169,10 +168,6 @@ footer {
 footer ul li {
     display: inline-block;
     font-size: 16px;
-}
-
-footer h2 {
-    color: rgb(165, 85, 112);
 }
 
   @media screen and (max-width: 768px) {
