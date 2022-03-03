@@ -37,26 +37,59 @@
 
   <!-- BODY -->
   <main>
+    
     <section id="about-me">
-      <!--ABOUT ME-->
-      <h2>about me</h2>
-      <img src="./assets/images/selfie.png" alt="selfie of author">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet error inventore velit, reiciendis sapiente, ullam autem eligendi maxime ut necessitatibus aperiam, optio qui commodi laborum quo at temporibus veritatis voluptates?
-      </p>
-    </section>
+      <!-- ABOUT ME -->
+      <article class="container about-me">
+          <h2>About Me</h2>
+          <div class="read-more">
+              <div class="portrait">
+                  <img src="./assets/images/selfie.png" alt="selfie of author">
+              </div>
+              <div class="about-me-text">
+                  <p> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, numquam suscipit eum omnis accusantium maxime doloremque ipsum reprehenderit perspiciatis cupiditate magnam optio modi laudantium sint consequatur facilis quasi! Autem, mollitia.
+                  </p>
+              </div>
+            </div>
+      </article>
+  </section>
 
     <section id="my-work">
       <!-- MY WORK -->
-      <div class="examples">
-        <h2>my work</h2>
-        <a href="https://emilyhoodenpyle.github.io/hw1-semantic-markup/">
-          <div class="semantic-markup">
-            <alt id=""></alt>
-            <p class="mywork">Semantic Markup</p>
-          </div>
-        </a>
-      </div>
+      <article class="semantic-markup">
+        <h2>My Work</h2>
+        <div class="card-column">
+          <a href="https://emilyhoodenpyle.github.io/hw1-semantic-markup/">
+            <figure class="card code-card">
+             <header><h3>
+                Semantic Markup
+              </h3></header>
+            </figure>
+          </a>
+        </div>
+
+        <div class="card-column">
+          <a href="https://emilyhoodenpyle.github.io/hw1-semantic-markup/">
+            <figure class="card code-card">
+             <header><h3>
+                Example 2
+              </h3></header>
+            </figure>
+          </a>
+        </div>
+
+        <div class="card-column">
+          <a href="https://emilyhoodenpyle.github.io/hw1-semantic-markup/">
+            <figure class="card code-card">
+             <header><h3>
+                Example 3
+              </h3></header>
+            </figure>
+          </a>
+        </div>
+
+      </article>
     </section>
 
     <section id="resume">
