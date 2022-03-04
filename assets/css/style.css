@@ -12,6 +12,7 @@
    margin: 0;
 }
 
+/* BODY */
 body {
     display: flex;
     flex-direction: column;
@@ -20,6 +21,7 @@ body {
     background: var(--light);
 }
 
+/* HEADER */
 header {
    display: flex;
    justify-content: space-evenly;
@@ -41,8 +43,10 @@ h2 {
 
 h3 {
     font-size: 150%;
+    color: var(--midlight);
 }
 
+/* NAVIGATION */
 nav {
    display: flex;
    justify-content: space-evenly;
@@ -64,6 +68,7 @@ nav ul li {
    margin-left: 2em;
 }
 
+/* LINKS */
 a {
    color:var(--midlight);
    transition:all 0.5s;
@@ -74,31 +79,42 @@ a:hover {
    transition:all 0.5s;
 }
 
+/* PARAGRAPH TEXT */
 p {
    font-size: 16px;
 }
 
+/* MAIN */
 main {
-    justify-content: center;
-    flex-flow: column-reverse wrap-reverse;
-    align-items: center;
-    align-content: space-between;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
     padding: 2em;
 }
 
+/* SECTION */
 section {
     padding-right: 5%;
     flex: 1 1 0;
     padding-right: 0.5em;
     float: left;
     background: var(--mid);
-    border-bottom: 1px solid var(--dark);
+}
+
+/* ARTICLE */
+article {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
 }
 
 article p {
     margin: 0.2em;
+    margin-left: 1px solid var(--dark);
     font-size: 16px;
 }
+
+/* BUTTON */
 
 button {
     background-color: var(--dark);
@@ -118,15 +134,20 @@ button {
     border: 2px solid var(--dark);
 }
 
-  .button1:hover {
+.button1:hover {
     background-color: var(--middark);
 }
 
+/* IMAGES */
 img {
     height: 300px;
     width: auto;
+    border-radius: 100%;
+    border: 3px solid var(--middark);
+    box-shadow: 0px 0px 8px var(--middark);
 }
 
+/* FOOTER */
 footer {
    padding: 2em;
    text-align: center;
@@ -134,47 +155,91 @@ footer {
    color: var(--light);
 }
 
+/* About Me */
+.aboutcontainer {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+/* MY WORK */
 .row {
     display: flex;
+    flex-flow: row;
     flex-wrap: wrap;
-    margin-top: 2%;
 }
 
+div .row a {
+    color: var(--middark);
+    text-decoration: solid;
+}
 .card {
-    flex: 1 0 0;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
+    width: 400px;
+    margin: 10px;
+    border: 3px solid var(--dark);
+    background-color: var(--dark);
+    transition:all 0.5s
 }
 
-.card img {
-    width: 100%;
-    min-width: 400px;
+.card:hover {
+    box-shadow: inset 0px 0px 8px var(--middark), 0 0 15px var(--dark);
 }
 
-div .row + section {
-    padding: 20px;
-    border: 4px solid #b9c6ae;
+.link {
+    background-color: var(--dark);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+.maincard {
+    flex-grow: 25;
+    background-image: url("../images/Semantic-markup.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.examplecard {
+    min-height: 267px;
+    flex-grow: 1;
+    background-image: url("../images/rocky-beach-andry-omelyanchuk.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* RESUME */
+.resume h2 {
+    width: fit-content;
+}
+
+.resume .resumetxt {
+    display: none;
+    padding: 0.1em 0;
+}
+
+.resume:hover .resumetxt {
+    display: block;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
     header {
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
   
     main {
       max-width: 1200px;
     }
-  }
 
-  @media screen and (max-width: 430px) {
-    header {
-      flex-direction: column;
+    article {
+        display: inline-block;
+        margin-bottom: 25px;
     }
-  
-    .card img {
-        width: 90%;
-        max-width: 400px;
+    
+    .resume .resumetxt {
+        display: flex;
     }
+
   }
