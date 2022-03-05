@@ -1,114 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emily Hoodenpyle's Portfolio</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Hoodenpyle's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
 
-<body>
-
-  <header>
-    <!-- HEADER -->
-    <h1 class="page-title">
-      Emily Hoodenpyle's Portfolio
-    </h1>
-    <!-- NAVIGATION -->
-    <nav>
-      <ul>
+    <header>
+      <!-- HEADER -->
+      <h1 class="page-title">
+        Emily Hoodenpyle's Portfolio
+      </h1>
+      <!-- NAVIGATION -->
+      <nav>
+        <ul>
           <li>
-              <a href="#about-me">about me</a>
-          </li>
+            <a href="https://emilyhoodenpyle.github.io/portfolio/">home</a>
+          </li>  
           <li>
-              <a href="#my-work">my work</a>
-          </li>
-          <li>
-              <a href="#contact-me">contact me</a>
-          </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- BODY -->
-  <main>
+                <a href="#about-me">about me</a>
+            </li>
+            <li>
+                <a href="#my-work">my work</a>
+            </li>
+            <li>
+                <a href="#contact-me">contact me</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- BODY -->
+    <main>
+      
+      <section id="about-me" class="about-me">
+        <!-- ABOUT ME -->
+            <h2 style="flex: 0 0 200px;">about me</h2>
+            <div class="aboutcontainer">
+                <div class="portrait">
+                    <img src="./assets/images/selfie.png" alt="selfie of author">
+                </div>
+                <div class="about-me-text">
+                    <p> 
+                      Hello! My name is Emily Hoodenpyle and I am an (aspiring) web developer.
+                    </p>
+                </div>
+              </div>
+    </section>
+  
     
-    <section id="about-me">
-      <!-- ABOUT ME -->
-      <article class="about-me">
-          <h2>About Me</h2>
-          <div class="aboutcontainer">
-              <div class="portrait">
-                  <img src="./assets/images/selfie.png" alt="selfie of author">
-              </div>
-              <div class="about-me-text">
-                  <p> 
-                    Hello! My name is Emily Hoodenpyle and I am an (aspiring) web developer.
-                  </p>
-              </div>
-            </div>
-      </article>
-  </section>
-
-  </section>
-
-    <section id="my-work">
-      <!-- MY WORK -->
-      <article class="semantic-markup">
-        <h2>My Work</h2>
-        <div class="row">
-          <div class="card maincard">
-            <a href="https://emilyhoodenpyle.github.io/hw1-semantic-markup/">
-              <h3 class="link">Semantic Markup</h3>
-            </a>
-              <alt id="screencapture of Horiseon SEO webpage" />
-            </a>
-          </div>
-
-          <div class="card examplecard">
-            <h3 class="link">placeholder</h3>
-            <alt id="photo of a rocky beach, taken by Andry Omelyanchuk" />
-          </div>
-
-          <div class="card examplecard">
-            <h3 class="link">placeholder</h3>
-            <alt id="photo of a rocky beach, taken by Andry Omelyanchuk" />
-          </div>
-
-          <div class="card examplecard">
-            <h3 class="link">placeholder</h3>
-            <alt id="photo of a rocky beach, taken by Andry Omelyanchuk" />
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section id="contact-me">
-      <!-- CONTACT ME -->
-      <article class="contact-me">
-        <h2>contact me</h2>
-        <button class="button1">
-          <a href="mailto:emilyghoodenpyle@gmail.com">Email</a>
-        </button>
+  
+      <section id="my-work" class="my-work">
+        <!-- MY WORK -->
         
-        <button class="button1">
-         <a href="https://github.com/EmilyHoodenpyle">GitHub</a>
-        </button>
+          <h2 style="flex: 0 0 200px;">my work</h2>
+          <div class="row">
+            <div class="card maincard">
+              <a href="https://emilyhoodenpyle.github.io/hw1-semantic-markup/">
+                <h3 class="link">Semantic Markup</h3>
+              </a>
+                <alt id="screencapture of Horiseon SEO webpage">
+              
+            </alt></div>
   
-        <button class="button1">
-          <a href="https://www.linkedin.com/in/emily-hoodenpyle-04715a192/">LinkedIn</a>
-         </button>
-      </article>
-    </section>
+            <div class="card examplecard">
+              <h3 class="link">placeholder</h3>
+              <alt id="photo of a rocky beach, taken by Andry Omelyanchuk">
+            </alt></div>
   
-  </main>
-
-  <footer>
-    <!-- FOOTER -->
-    <h3>
-      made with 🖤 by Emily Hoodenpyle
-    </h3>
-  </footer>
-</body>
+            <div class="card examplecard">
+              <h3 class="link">placeholder</h3>
+              <alt id="photo of a rocky beach, taken by Andry Omelyanchuk">
+            </alt></div>
+  
+            <div class="card examplecard">
+              <h3 class="link">placeholder</h3>
+              <alt id="photo of a rocky beach, taken by Andry Omelyanchuk">
+            </alt></div>
+          </div>
+        
+      </section>
+  
+      <section id="contact-me" class="contact-me">
+        <!-- CONTACT ME -->
+          <h2>contact me</h2>
+          <div class="buttons">
+          <button class="button1">
+            <a href="mailto:emilyghoodenpyle@gmail.com">Email</a>
+          </button>
+          
+          <button class="button1">
+           <a href="https://github.com/EmilyHoodenpyle">GitHub</a>
+          </button>
+    
+          <button class="button1">
+            <a href="https://www.linkedin.com/in/emily-hoodenpyle-04715a192/">LinkedIn</a>
+           </button>
+           </div>
+      </section>
+    
+    </main>
+  
+    <footer>
+      <!-- FOOTER -->
+      <h3>
+        made with 🖤 by Emily Hoodenpyle
+      </h3>
+    </footer>
+  </body>
+</html>

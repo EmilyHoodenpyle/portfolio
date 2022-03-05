@@ -37,8 +37,9 @@ h1 {
 }
 
 h2 {
+   display: flex;
+   flex: 0 0 200x;
    margin: 1em;
-   margin-right: 1.5em;
    font-size: 250%;
 }
 
@@ -95,27 +96,20 @@ main {
 
 /* SECTION */
 section {
-    padding-right: 5%;
+    display: flex;
     flex: 1 1 0;
     padding-right: 0.5em;
+    padding-bottom: 1em;
     float: left;
     background: var(--mid);
 }
 
-/* ARTICLE */
-article {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 25px;
-}
-
-article p {
-    margin: 0.2em;
-    margin-left: 1px solid var(--dark);
-    font-size: 16px;
-}
-
 /* BUTTON */
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
 
 button {
     background-color: var(--dark);
@@ -166,14 +160,11 @@ footer {
 /* MY WORK */
 .row {
     display: flex;
+    flex: 0 0 60%;
     flex-flow: row;
     flex-wrap: wrap;
 }
 
-div .row a {
-    color: var(--middark);
-    text-decoration: solid;
-}
 .card {
     width: 400px;
     margin: 10px;
@@ -221,7 +212,7 @@ div .row a {
       max-width: 1200px;
     }
 
-    article {
+    section {
         display: inline-block;
         margin-bottom: 25px;
     }
