@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my portfolio! It is a work in progress, as I will be adding to it as my skills grow over the course of this class. 
+This is my portfolio! It is a work in progress, as I will be adding to it as my skills grow over the course of this class. Within the portfolio, you will find a short About Me section, samples of my previous work, and links to the best modes to contact me.
 
 ## Table of Contents
 - [Installation](#installation)
