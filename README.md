@@ -43,3 +43,6 @@ SOFTWARE.
 ## Link to deployed project
 
 (https://emilyhoodenpyle.github.io/portfolio/)
+
+## Image of finished webpage
+![img](./assets/images/finishedDesignScreenshot.png)
