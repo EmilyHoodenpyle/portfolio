@@ -1,5 +1,5 @@
- /* color scheme sourced from http://khroma.co/generator/ */
- :root {
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
     --light: #ebdde2 ;
     --dark: #3b2391;
     --midlight: #b88589;
@@ -37,8 +37,9 @@ h1 {
 }
 
 h2 {
-   margin: 0.3em 0;
-   font-size: 180%;
+   margin: 1em;
+   margin-right: 1.5em;
+   font-size: 250%;
 }
 
 h3 {
@@ -192,6 +193,7 @@ div .row a {
 }
 
 .maincard {
+    min-height: 400px;
     flex-grow: 25;
     background-image: url("../images/Semantic-markup.png"); 
     background-repeat: no-repeat;
@@ -208,20 +210,6 @@ div .row a {
     background-position: center;
 }
 
-/* RESUME */
-.resume h2 {
-    width: fit-content;
-}
-
-.resume .resumetxt {
-    display: none;
-    padding: 0.1em 0;
-}
-
-.resume:hover .resumetxt {
-    display: block;
-}
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
     header {
@@ -236,10 +224,6 @@ div .row a {
     article {
         display: inline-block;
         margin-bottom: 25px;
-    }
-    
-    .resume .resumetxt {
-        display: flex;
     }
 
   }
