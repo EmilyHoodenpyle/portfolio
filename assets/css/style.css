@@ -187,7 +187,16 @@ footer {
 .maincard {
     min-height: 400px;
     flex-grow: 25;
-    background-image: url("../images/Semantic-markup.png"); 
+    background-image: url("../images/PocketMonsterScreencap.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.passwordgeneratorcard {
+    min-height: 267px;
+    flex-grow: 1;
+    background-image: url("../images/passwordGeneratorScreencap.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
